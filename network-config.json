@@ -1,0 +1,51 @@
+{
+    "name": "Amazon Managed Blockchain",
+    "version": "1.0.0",
+    "client": {
+      "organization": "org1",
+      "connection": {
+        "timeout": {
+          "peer": {
+            "endorser": "300"
+          }
+        }
+      }
+    },
+    "organizations": {
+      "org1": {
+   
+
+        "mspid": "m-5YY27ZNYPNFFDMCZFS5PZTG5GA",
+        "peers": ["fabcar_1.0:b7789824330370311ab4d69c1da0c386af559c98cd095777bb734b3a6be17e35"],
+        "certificateAuthorities": ["ca.m-5yy27znypnffdmczfs5pztg5ga.n-jq2cvzqsqbgdrg3brwclxb7mka.managedblockchain.us-east-1.amazonaws.com:30002"]
+      
+      }
+    },
+    "peers": {
+      
+      "peer0.org1.example.com": {
+        "url": "grpcs://nd-u4vphawo6fatnffipri4w5hzk4.m-5yy27znypnffdmczfs5pztg5ga.n-jq2cvzqsqbgdrg3brwclxb7mka.managedblockchain.us-east-1.amazonaws.com:30003",
+        "tlsCACerts": {
+          "path": "./managedblockchain-tls-chain.pem"
+        }
+      }
+    },
+    "certificateAuthorities": {
+      "ca.org1.example.com": {
+        "url": "https://ca.m-5YY27ZNYPNFFDMCZFS5PZTG5GA.n-JQ2CVZQSQBGDRG3BRWCLXB7MKA.managedblockchain.us-east-1.amazonaws.com",
+        "caName": "ca-org1",
+        "tlsCACerts": {
+          "path": "./managedblockchain-tls-chain.pem"
+        }
+      }
+    },
+    "orderers": {
+      "orderer.example.com": {
+        "url": "grpcs://orderer.n-jq2cvzqsqbgdrg3brwclxb7mka.managedblockchain.us-east-1.amazonaws.com:30001",
+        "tlsCACerts": {
+          "path": "./managedblockchain-tls-chain.pem"
+        }
+      }
+    }
+  }
+  
